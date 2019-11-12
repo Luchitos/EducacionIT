@@ -1,0 +1,93 @@
+.estiloPrincipal {
+  color: darkgrey;
+  background-color: pink;
+  padding: 4.5%;
+  font-size: 12px;
+  margin: 0;
+  box-shadow: 0 0 12px lightgrey;
+}
+.estiloSecundario {
+  color: violet;
+  background-color: lightgrey;
+  padding: 2.25%;
+  font-size: 12px;
+  margin: 2.25%;
+  box-shadow: 0 0 12px lightgrey;
+}
+header {
+  color: darkgrey;
+  background-color: pink;
+  padding: 4.5%;
+  font-size: 12px;
+  margin: 0;
+  box-shadow: 0 0 12px lightgrey;
+}
+@media (max-width:640px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    color: blue;
+  }
+}
+@media (min-width:640px) and (max-width:1024px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    color: red;
+  }
+}
+@media (max-width:2910px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    color: black;
+  }
+}
+nav {
+  color: violet;
+  background-color: lightgrey;
+  padding: 2.25%;
+  font-size: 12px;
+  margin: 2.25%;
+  box-shadow: 0 0 12px lightgrey;
+}
+main {
+  color: darkgrey;
+  background-color: pink;
+  padding: 4.5%;
+  font-size: 12px;
+  margin: 0;
+  box-shadow: 0 0 12px lightgrey;
+}
+@media (max-width:640px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+  }
+}
+@media (min-width:640px) and (max-width:1024px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+  }
+}
+@media (max-width:2910px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+  }
+}
+footer {
+  color: violet;
+  background-color: lightgrey;
+  padding: 2.25%;
+  font-size: 12px;
+  margin: 2.25%;
+  box-shadow: 0 0 12px lightgrey;
+}

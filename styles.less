@@ -1,0 +1,116 @@
+@letra: 	verdana,sans-serif;
+@colorPri: 	darkgrey;
+@colorSec: 	violet;
+@backPri: 	pink;
+@backSec: 	lightgrey;
+@fondo: 	url(img/background.png);
+@xs: 		(max-width:640px);
+@md: 		(min-width:640px) and (max-width:1024px);
+@lg: 		(max-width:2910px);
+@porcentaje: 90%;
+@grados: 	0;
+@sizeLetra: 12px;
+
+.estiloPrincipal{
+	color: @colorPri;
+	background-color: @backPri;
+	padding: @porcentaje /20;
+	font-size: @sizeLetra;
+	margin: 0;
+	box-shadow: 0 0 @sizeLetra @backSec;
+}
+
+.estiloSecundario{
+	color: @colorSec;
+	background-color: @backSec;
+	padding: @porcentaje /40;
+	font-size: @sizeLetra;
+	margin: @porcentaje / 40;
+	box-shadow: 0 0 @sizeLetra @backSec;
+}
+
+.ubicacion(@ancho: @porcentaje, @flex, @orientacion){
+	display:flex;
+	flex-direction: @flex;
+	align-content: @orientacion;
+}
+
+	header{
+		.estiloPrincipal;
+		@media @xs {
+			.ubicacion(@porcentaje, column, space-between);
+			color:blue;
+			}
+		@media @md{
+			.ubicacion(@porcentaje, column, space-between);
+			color:red;
+			}
+		@media @lg{
+			.ubicacion(@porcentaje, column, space-around);
+			color:black;
+			}
+
+		h1{
+
+		}
+
+	}
+
+	nav{
+		.estiloSecundario;
+		ul{
+			li{
+			
+				a{
+
+				}
+				&:hover, &:focus{
+				
+				}
+			}
+		}
+	}
+
+	main{
+		.estiloPrincipal;
+		@media @xs {
+			.ubicacion(@porcentaje, column, space-between)
+			}
+		@media @md{
+			.ubicacion(@porcentaje, row, space-between);
+			}
+		@media @lg{
+			.ubicacion(@porcentaje, row, space-around);
+			}
+		article{
+			p{
+
+			}
+		}
+		section{
+			p{
+
+			}
+		}
+	}
+
+	footer{
+		.estiloSecundario;
+		form{
+
+		}
+		div{
+			a{
+
+			}
+		}
+		p{
+
+		}
+	}
+
+
+
+
+
+
